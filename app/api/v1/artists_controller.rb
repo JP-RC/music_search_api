@@ -1,6 +1,6 @@
 module Api
   module V1
-    class ArtistController < ApplicationController
+    class ArtistsController < ApplicationController
       respond_to :json
       def show
           respond_with Artist.find(params[:id])
