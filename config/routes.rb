@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :api, defaults: {format: 'json'} do
     namespace :v1 do
-      resources :artist
-      resources :song
+      resources :artists
+      resources :songs
     end
   end
 

@@ -1,6 +1,3 @@
-module Api
-  module V1
-    class SongsController < ApplicationController
-      
-  end
+class Api::V1::SongsController < ApplicationController
+
 end
