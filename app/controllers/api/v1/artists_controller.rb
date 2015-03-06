@@ -1,7 +1,14 @@
 class Api::V1::ArtistsController < ApplicationController
   # respond_to :json
+
+
+  def index
+    response = Echonest.new.artist_info
+    render json: response
+  end
+
   def show
-      respond_with Artist.find(params[:id])
+      # respond_with Artist.find(params[:id])
   end
 
   def create
@@ -28,9 +35,7 @@ class Api::V1::ArtistsController < ApplicationController
     artist.destroy
   end
 
-  private
-
-  def artist_params
+  private def artist_params
     params.require(:artist).permit(:id, :name)
   end
 end
