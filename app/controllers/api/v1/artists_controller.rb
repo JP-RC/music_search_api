@@ -3,7 +3,7 @@ class Api::V1::ArtistsController < ApplicationController
 
 
   def index
-    response = Echonest.new("beatles").video
+    response = Echonest.new("beatles").params[:artist_params]
     render json: response
   end
 
@@ -38,4 +38,7 @@ class Api::V1::ArtistsController < ApplicationController
   # private def artist_params
   #   params.require(:artist).permit(:id, :name)
   # end
+  private def artist_params
+    params.require(:artist).permit( :video )
+  end
 end

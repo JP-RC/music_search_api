@@ -1,5 +1,0 @@
-   Artist Info
-
-Please view an Artist by going to:
-localhost:3000/api/v1/artist/{artist}
-You must replace {artist} with a valid username.
