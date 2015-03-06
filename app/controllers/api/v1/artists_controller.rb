@@ -4,7 +4,7 @@ class Api::V1::ArtistsController < ApplicationController
 
   def index
     response = Echonest.new.artist_info
-    render json: response
+    #render json: response
   end
 
   def show
