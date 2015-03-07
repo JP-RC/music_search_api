@@ -1,6 +1,7 @@
 class Api::V1::SongsController < ApplicationController
-  def index
-    
 
+  def index
+    response = Setlist.new("beatles").sets
+    render json: response
   end
 end
