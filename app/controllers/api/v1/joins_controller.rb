@@ -3,13 +3,11 @@ class Api::V1::JoinsController < ApplicationController
 
 
   def index
-    artist_name = "beatles"
-    response = [Echonest.new(artist_name).video, Setlist.new(artist_name).sets]
+    artist_name = params[:artist_name]
+     response = Echonest.new(artist_name).video, Setlist.new(artist_name).setlist
     render json: response
   end
 
 
-  # private def artist_params
-  #   params.require(:artist).permit( :video )
-  # end
+
 end
