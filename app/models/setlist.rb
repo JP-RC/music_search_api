@@ -11,6 +11,7 @@ class Setlist
       # event
       {
       artist: event["artist"]["@name"],
+      music_brainz_id: event["artist"]["@mbid"],
       sets: parse(event["sets"]["set"])
       }
     end
