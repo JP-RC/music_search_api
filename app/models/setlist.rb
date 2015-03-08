@@ -1,8 +1,8 @@
 class Setlist
 
   attr_reader :response
-  def initialize(artist_name)
-    @response = HTTParty.get("http://api.setlist.fm/rest/0.1/search/setlists.json?&artistName=#{artist_name}")["setlists"]["setlist"]
+  def initialize(artist)
+    @response = HTTParty.get("http://api.setlist.fm/rest/0.1/search/setlists.json?&artistName=#{artist}")["setlists"]["setlist"]
   end
 
 
