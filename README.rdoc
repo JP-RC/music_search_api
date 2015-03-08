@@ -2,7 +2,7 @@
 
 * Heroku url: https://music-search-api.herokuapp.com/
 
-* From the local host you will get the following page:
+* From the Heroku landing page you will get the following:
 
 Music Api Viewer
 
@@ -15,3 +15,7 @@ leave a space.
 Example. (Green+Day or Green Day) either will produce the same results.
   * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green Day&results=1
   * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green+Day&results=1
+
+** How to use this api
+  * Enter the artist name following the example above
+  * Enter the number of videos that you want to display following the example above
