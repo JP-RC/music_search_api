@@ -1,6 +1,6 @@
 class Api::V1::JoinsController < ApplicationController
   # respond_to :json
-
+  protect_from_forgery with: :null_session
 
   def index
     artist_name = params[:artist_name]
