@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Heroku url: https://music-search-api.herokuapp.com/
 
-Things you may want to cover:
+  *From the local host you will get the following page:
 
-* Ruby version
+Music Api Viewer
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Please view music video and various set lists by going to:
+http://localhost:3000/api/v1/joins?artist_name={artist name}
+You must replace {artist name} with a musical artists name. If the
+artist name has more than one word, either add a '+' between the words, or
+ leave a space.
+Example. (Green+Day or Green Day) either will produce the same results.
+http://localhost:3000/api/v1/joins?artist_name=Green Day
+http://localhost:3000/api/v1/joins?artist_name=Green+Day
