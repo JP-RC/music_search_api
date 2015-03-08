@@ -1,9 +1,9 @@
 class Echonest
 
   attr_reader :response
-  def initialize(artist_name)
+  def initialize(artist_name, results)
     key = "api_key=#{ENV['ECHONEST_KEY']}"
-    @response = HTTParty.get("http://developer.echonest.com/api/v4/artist/video?#{key}&name=#{artist_name}&format=json&results=1&start=0")["response"]["video"]
+    @response = HTTParty.get("http://developer.echonest.com/api/v4/artist/video?#{key}&name=#{artist_name}&format=json&results=#{results}&start=0")["response"]["video"]
   end
 
   def video

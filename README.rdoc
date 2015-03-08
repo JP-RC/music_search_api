@@ -7,11 +7,11 @@
 Music Api Viewer
 
 Please view music video and various set lists by going to:
-  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name={artist name}
-You must replace {artist name} with a musical artists name. If the
+  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name={artist name}&results={results number}
+You must replace {artist name} with a musical artists name. You must replace {results number} with a number. If the
 artist name has more than one word, either add a '+' between the words, or
 leave a space.
 
 Example. (Green+Day or Green Day) either will produce the same results.
-  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green Day
-  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green+Day
+  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green Day&results=1
+  * https://music-search-api.herokuapp.com/api/v1/joins?artist_name=Green+Day&results=1
