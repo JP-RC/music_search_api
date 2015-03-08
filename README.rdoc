@@ -2,15 +2,16 @@
 
 * Heroku url: https://music-search-api.herokuapp.com/
 
-  *From the local host you will get the following page:
+* From the local host you will get the following page:
 
 Music Api Viewer
 
 Please view music video and various set lists by going to:
-http://localhost:3000/api/v1/joins?artist_name={artist name}
+  * http://localhost:3000/api/v1/joins?artist_name={artist name}
 You must replace {artist name} with a musical artists name. If the
 artist name has more than one word, either add a '+' between the words, or
- leave a space.
+leave a space.
+
 Example. (Green+Day or Green Day) either will produce the same results.
-http://localhost:3000/api/v1/joins?artist_name=Green Day
-http://localhost:3000/api/v1/joins?artist_name=Green+Day
+  * http://localhost:3000/api/v1/joins?artist_name=Green Day
+  * http://localhost:3000/api/v1/joins?artist_name=Green+Day
