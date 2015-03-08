@@ -5,10 +5,8 @@ class Setlist
     @response = HTTParty.get("http://api.setlist.fm/rest/0.1/search/setlists.json?&artistName=#{artist}")["setlists"]["setlist"]
   end
 
-
   def setlist
     @response.map do |event|
-      # event
       {
       artist: event["artist"]["@name"],
       music_brainz_id: event["artist"]["@mbid"],

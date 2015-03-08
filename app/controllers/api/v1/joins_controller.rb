@@ -7,7 +7,4 @@ class Api::V1::JoinsController < ApplicationController
      response = Echonest.new(artist_name).video, Setlist.new(artist_name).setlist
     render json: response
   end
-
-
-
 end
